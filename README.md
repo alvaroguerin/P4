@@ -59,14 +59,14 @@ ejercicios indicados.
   
   <img src="img/tanh.png" width="640" align="center">
   
-  							LP
+  				LP - Dependencia entre los coeficientes 2 y 3
   <img src="img/lp_coefs.png" width="640" align="center">
   
-  						  	LPCC 
+  				LPCC - Dependencia entre los coeficientes 2 y 3 
   <img src="img/lpcc_coefs.png" width="640" align="center">
   
-  							MFCC
-  <img src="img/mfcc_coefs.png" width="950" align="center">
+  				MPCC - Dependencia entre los coeficientes 2 y 3
+  <img src="img/mfcc_coefs.png" width="640" align="center">
   
   + ¿Cuál de ellas le parece que contiene más información?
 
