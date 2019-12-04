@@ -28,10 +28,11 @@ ejercicios indicados.
 - Escriba el *pipeline* principal usado para calcular los coeficientes cepstrales de predicción lineal
   (LPCC), en su fichero <code>scripts/wav2lpcc.sh</code>:
  
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~.sh
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~.sh 
   sox $inputfile -t raw - dither -p12 | $X2X +sf | $FRAME -l 200 -p 40 | $WINDOW -l 200 -L 200 |
 	$LPC -l 200 -m $lpc_order | $LPCC -m $lpc_order -M $cepstrum_order > $base.lpcc
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 
 - Escriba el *pipeline* principal usado para calcular los coeficientes cepstrales en escala Mel (MFCC), en
   su fichero <code>scripts/wav2mfcc.sh</code>:
@@ -54,10 +55,6 @@ ejercicios indicados.
 
 - Inserte una imagen mostrando la dependencia entre los coeficientes 2 y 3 de las tres parametrizaciones
   para una señal de prueba.
-  
-  *La imagen siguiente es un ejemplo de cómo insertar imágenes en markdown*
-  
-  <img src="img/tanh.png" width="640" align="center">
   
   				LP - Dependencia entre los coeficientes 2 y 3
   <img src="img/lp_coefs.png" width="640" align="center">
