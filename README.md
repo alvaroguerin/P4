@@ -46,11 +46,11 @@ sox $inputfile -t raw - | $X2X +sf | $FRAME -l 400 -p 80 | $WINDOW -l 400 -L 400
 
 - Indique qué parámetros considera adecuados para el cálculo de los coeficientes LPCC y MFCC.
 
-  # LPCC:
+  #### LPCC:
     	LPC_order =  8
     	Cepstrum_order = 12
     
-  # MFCC:
+  #### MFCC:
     	Filters = 20
     	MFCC_order = 12
     	Sampling frequency = 16k
