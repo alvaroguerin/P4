@@ -27,7 +27,10 @@ ejercicios indicados.
 
 - Escriba el *pipeline* principal usado para calcular los coeficientes cepstrales de predicción lineal
   (LPCC), en su fichero <code>scripts/wav2lpcc.sh</code>:
-
+ 
+  sox $inputfile -t raw - dither -p12 | $X2X +sf | $FRAME -l 200 -p 40 | $WINDOW -l 200 -L 200 |
+	$LPC -l 200 -m $lpc_order | $LPCC -m $lpc_order -M $cepstrum_order > $base.lpcc
+  
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~.sh
 # A modo de ejemplo de cómo incorporar código fuente a un fichero markdown, el pipeline siguiente
 # es el usado para calcular los coeficientes de predicción lineal (LP) en el script wav2lp.sh:
@@ -37,8 +40,20 @@ sox $inputfile -t raw - | $X2X +sf | $FRAME -l 400 -p 80 | $WINDOW -l 400 -L 400
 
 - Escriba el *pipeline* principal usado para calcular los coeficientes cepstrales en escala Mel (MFCC), en
   su fichero <code>scripts/wav2mfcc.sh</code>:
+  
+  sox $inputfile -t raw - dither -p12 | $X2X +sf | $FRAME -l 200 -p 40 | $WINDOW -l 200 -L 200 |
+	$MFCC -l 200 -m $mfcc_order -s $frequency > $base.mfcc
 
 - Indique qué parámetros considera adecuados para el cálculo de los coeficientes LPCC y MFCC.
+
+  LPCC:
+    LPC_order =  8
+    Cepstrum_order = 12
+    
+  MFCC:
+    Filters = 20
+    MFCC_order = 12
+    Sampling frequency = 16k
 
 - Inserte una imagen mostrando la dependencia entre los coeficientes 2 y 3 de las tres parametrizaciones
   para una señal de prueba.
@@ -46,6 +61,8 @@ sox $inputfile -t raw - | $X2X +sf | $FRAME -l 400 -p 80 | $WINDOW -l 400 -L 400
   *La imagen siguiente es un ejemplo de cómo insertar imágenes en markdown*
   
   <img src="img/tanh.png" width="640" align="center">
+  
+  <img src="img/lp_coefs.png" width="640" align="center">
   
   + ¿Cuál de ellas le parece que contiene más información?
 
