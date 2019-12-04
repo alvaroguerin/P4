@@ -67,7 +67,14 @@ sox $inputfile -t raw - | $X2X +sf | $FRAME -l 400 -p 80 | $WINDOW -l 400 -L 400
   
   <img src="img/tanh.png" width="640" align="center">
   
+  ##### LP
   <img src="img/lp_coefs.png" width="640" align="center">
+  
+  ##### LPCC
+  <img src="img/lpcc_coefs.png" width="640" align="center">
+  
+  ##### MFCC
+  <img src="img/mfcc_coefs.png" width="640" align="center">
   
   + ¿Cuál de ellas le parece que contiene más información?
 
