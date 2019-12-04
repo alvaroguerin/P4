@@ -33,14 +33,6 @@ ejercicios indicados.
 	$LPC -l 200 -m $lpc_order | $LPCC -m $lpc_order -M $cepstrum_order > $base.lpcc
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~.sh
-# A modo de ejemplo de cómo incorporar código fuente a un fichero markdown, el pipeline siguiente
-# es el usado para calcular los coeficientes de predicción lineal (LP) en el script wav2lp.sh:
-sox $inputfile -t raw - | $X2X +sf | $FRAME -l 400 -p 80 | $WINDOW -l 400 -L 400 |
-        $LPC -l 400 -m $lpc_order > $base.lp
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 - Escriba el *pipeline* principal usado para calcular los coeficientes cepstrales en escala Mel (MFCC), en
   su fichero <code>scripts/wav2mfcc.sh</code>:
   
@@ -70,11 +62,11 @@ sox $inputfile -t raw - | $X2X +sf | $FRAME -l 400 -p 80 | $WINDOW -l 400 -L 400
   ##### LP
   <img src="img/lp_coefs.png" width="640" align="center">
   
-  ##### LPCC
+  ##### <LPCC align="center">
   <img src="img/lpcc_coefs.png" width="640" align="center">
   
-  ##### MFCC
-  <img src="img/mfcc_coefs.png" width="640" align="center">
+  ##### MFCC<align="center">
+  <img src="img/mfcc_coefs.png" width="800" align="center">
   
   + ¿Cuál de ellas le parece que contiene más información?
 
