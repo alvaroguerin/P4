@@ -60,13 +60,13 @@ ejercicios indicados.
   <img src="img/tanh.png" width="640" align="center">
   
   							LP
-  <img src="img/lp_coefs.png" width="720" align="center">
+  <img src="img/lp_coefs.png" width="640" align="center">
   
   						  	LPCC 
-  <img src="img/lpcc_coefs.png" width="720" align="center">
+  <img src="img/lpcc_coefs.png" width="640" align="center">
   
   							MFCC
-  <img src="img/mfcc_coefs.png" width="1000" align="center">
+  <img src="img/mfcc_coefs.png" width="950" align="center">
   
   + ¿Cuál de ellas le parece que contiene más información?
 
