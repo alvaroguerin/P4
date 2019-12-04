@@ -84,7 +84,7 @@ ejercicios indicados.
 - Inserte una gráfica que muestre la función de densidad de probabilidad modelada por el GMM de un locutor
   para sus dos primeros coeficientes de MFCC.
   
-  <img src="img/subir.png" width="640" align="center">
+  <img src="img/todoazul.png" width="540" align="center">
   
 - Inserte una gráfica que permita comparar los modelos y poblaciones de dos locutores distintos. Comente el
   resultado obtenido y discuta si el modelado mediante GMM permite diferenciar las señales de uno y otro.
