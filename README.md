@@ -59,13 +59,13 @@ ejercicios indicados.
   
   <img src="img/tanh.png" width="640" align="center">
   
-  						##### LP
+  							LP
   <img src="img/lp_coefs.png" width="640" align="center">
   
-  						##### LPCC 
+  						  	LPCC 
   <img src="img/lpcc_coefs.png" width="640" align="center">
   
-  						##### MFCC
+  							MFCC
   <img src="img/mfcc_coefs.png" width="800" align="center">
   
   + ¿Cuál de ellas le parece que contiene más información?
