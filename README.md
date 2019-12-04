@@ -86,6 +86,9 @@ ejercicios indicados.
   
   <img src="img/todoazul.png" width="540" align="center">
   
+  
+> Podemos observar como el modelado mediante GMM se adapta casi a la perfección a la distribución del locutor, obteniendo un resultado muy preciso.
+  
 - Inserte una gráfica que permita comparar los modelos y poblaciones de dos locutores distintos. Comente el
   resultado obtenido y discuta si el modelado mediante GMM permite diferenciar las señales de uno y otro.
   
