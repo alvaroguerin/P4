@@ -41,8 +41,10 @@ sox $inputfile -t raw - | $X2X +sf | $FRAME -l 400 -p 80 | $WINDOW -l 400 -L 400
 - Escriba el *pipeline* principal usado para calcular los coeficientes cepstrales en escala Mel (MFCC), en
   su fichero <code>scripts/wav2mfcc.sh</code>:
   
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~.sh
   sox $inputfile -t raw - dither -p12 | $X2X +sf | $FRAME -l 200 -p 40 | $WINDOW -l 200 -L 200 |
 	$MFCC -l 200 -m $mfcc_order -s $frequency > $base.mfcc
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 - Indique qué parámetros considera adecuados para el cálculo de los coeficientes LPCC y MFCC.
 
