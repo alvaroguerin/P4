@@ -89,8 +89,12 @@ ejercicios indicados.
 - Inserte una gráfica que permita comparar los modelos y poblaciones de dos locutores distintos. Comente el
   resultado obtenido y discuta si el modelado mediante GMM permite diferenciar las señales de uno y otro.
   
-  <img src="img/subir4.png" width="640" align="center">
-
+  <img src="img/subir4.png" width="750" align="center">
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~.sh
+	El modelado nos permite diferenciar entre dos locutores, ya que como vemos en los ejemplos de arriba, el 1 y el 9 nos 
+	muestran dos bloques principales donde se acaparan casi el 50% de todas las muestras. Así tambien podemos notar que no          	es del todo correcto, ya que los dos grandes bloques podemos decir que representan el silencio y la voz y la voz de 	    cada locutor puede cambiar pero, está claro que, el silencio no depende entre locutores.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	
 ### Reconocimiento del locutor.
 
 - Inserte una tabla con la tasa de error obtenida en el reconocimiento de los locutores de la base de datos
