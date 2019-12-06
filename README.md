@@ -62,10 +62,15 @@ ejercicios indicados.
   				LPCC - Dependencia entre los coeficientes 2 y 3 
   <img src="img/lpcc_coefs.png" width="640" align="center">
   
-  				MPCC - Dependencia entre los coeficientes 2 y 3
+  				MFCC - Dependencia entre los coeficientes 2 y 3
   <img src="img/mfcc_coefs.png" width="640" align="center">
   
   + ¿Cuál de ellas le parece que contiene más información?
+  
+  >Podemos apreciar que, estos resultados nos muestran que los coeficientes LP están muy correlados por lo que no nos sirven 	para el reconocimiento del hablante. Los LPCC y MFCC sí que están incorrelados y por lo tanto sí que nos servirán. Indagando más en la pregunta, sabemos que el propósito principal del sistema es reconocer y verificar el hablante así pues nos interesará más resolución en las frecuencias bajas y consideramos que la distribución MFCC es experta en ello. Lo podemos fundamentar gracias a la gráfica inferior donde se muestra cómo funciona la MFCC en frecuencias bajas y cómo tiene así más resolución en frecuencias bajas:
+  
+  <img src="img/mfcc.png" width="640" align="center">
+  
 
 - Usando el programa <code>pearson</code>, obtenga los coeficientes de correlación normalizada entre los
   parámetros 2 y 3, y rellene la tabla siguiente con los valores obtenidos.
@@ -76,7 +81,7 @@ ejercicios indicados.
   
   + Compare los resultados de <code>pearson</code> con los obtenidos gráficamente.
   
-  > Podemos apreciar que, estos resultados nos muestran que los coeficientes LP están muy correlados por lo que no nos sirven 	para reconocimiento de hablante. Los LPCC y MFCC sí que están incorrelados y por lo tanto sí que nos servirán.
+  > 
   
 ### Entrenamiento y visualización de los GMM.
 
