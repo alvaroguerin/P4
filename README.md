@@ -76,6 +76,8 @@ ejercicios indicados.
   
   + Compare los resultados de <code>pearson</code> con los obtenidos gráficamente.
   
+  > Podemos apreciar que, estos resultados nos muestran que los coeficientes LP están muy correlados por lo que no nos sirven 	para reconocimiento de hablante. Los LPCC y MFCC sí que están incorrelados y por lo tanto sí que nos servirán.
+  
 ### Entrenamiento y visualización de los GMM.
 
 - Inserte una gráfica que muestre la función de densidad de probabilidad modelada por el GMM de un locutor
@@ -90,7 +92,7 @@ ejercicios indicados.
   
   <img src="img/subir4.png" width="750" align="center">
 
-> El modelado nos permite diferenciar entre dos locutores, ya que como vemos en los ejemplos de arriba, el 1 y el 9 nos muestran dos bloques principales donde se acaparan casi el 50% de todas las muestras. Así tambien podemos notar que no es del todo correcto, ya que los dos grandes bloques podemos decir que representan el silencio y la voz y la voz de cada locutor puede cambiar pero, está claro que, el silencio no depende entre locutores.
+> El modelado nos permite diferenciar entre dos locutores, ya que como vemos en los ejemplos de arriba, el 1 y el 9 nos muestran dos bloques principales donde se acaparan, en cada una, casi el 50% de todas las muestras. Así también podemos notar que no es del todo correcto, ya que los dos grandes bloques podemos decir que representan el silencio y la voz y la voz de cada locutor puede cambiar pero, está claro que, el silencio no depende entre locutores.
 	
 ### Reconocimiento del locutor.
 
