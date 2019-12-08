@@ -114,9 +114,12 @@ ejercicios indicados.
 - Inserte una tabla con la tasa de error obtenida en el reconocimiento de los locutores de la base de datos
   SPEECON usando su mejor sistema de reconocimiento para los parámetros LP, LPCC y MFCC.
   
-  |                        |   LP   |   LPCC  |   MFCC  |
-  |------------------------|:------:|:-------:|:-------:|
-  | tasa de error	   |        |  1.78%  |  0.64%  |
+  >Para estos resultados hemos utilizado 20 iteraciones y 32 gaussianas con inicialización con el algoritmo VQ (i = 1)
+  
+  |                        |    LP   |   LPCC  |   MFCC  |
+  |------------------------|:-------:|:-------:|:-------:|
+  | tasa de error	   |  4.97%  |  1.78%  |  0.64%  |
+  
 
 ### Verificación del locutor.
 
