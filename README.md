@@ -51,7 +51,7 @@ ejercicios indicados.
   #### MFCC:
     	Filters = 20
     	MFCC_order = 12
-    	Sampling frequency = 16k
+    	Sampling frequency = 8kHz
 
 - Inserte una imagen mostrando la dependencia entre los coeficientes 2 y 3 de las tres parametrizaciones
   para una señal de prueba.
@@ -114,9 +114,9 @@ ejercicios indicados.
 - Inserte una tabla con la tasa de error obtenida en el reconocimiento de los locutores de la base de datos
   SPEECON usando su mejor sistema de reconocimiento para los parámetros LP, LPCC y MFCC.
   
-  |                        | LP   | LPCC | MFCC |
-  |------------------------|:----:|:----:|:----:|
-  | tasa de error	   |      |      |      |
+  |                        |   LP   |   LPCC  |   MFCC  |
+  |------------------------|:------:|:-------:|:-------:|
+  | tasa de error	   |        |  1.78%  |  0.64%  |
 
 ### Verificación del locutor.
 
@@ -125,9 +125,12 @@ ejercicios indicados.
   pérdidas, y el score obtenido usando la parametrización que mejor resultado le hubiera dado en la tarea
   de reconocimiento.
  
-  |                        | LP   | LPCC | MFCC |
-  |------------------------|:----:|:----:|:----:|
-  | score		   |      |      |      |
+  |                        |   LP   |   LPCC  |   MFCC  |
+  |------------------------|:------:|:-------:|:-------:|
+  | score       	   |        |         |         |
+  | umbral óptimo      	   |        |         |         |
+  | núm. falsas alarmas    |        |         |         |
+  | pérdidas     	   |        |         |         |
 
 ### Test final y trabajo de ampliación.
 
