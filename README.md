@@ -86,7 +86,8 @@ ejercicios indicados.
 	
   <img src="img/pearson.png" width="450" align="center">
   Fig 1
-  <img src="img/coef_pearson.png" width="450" align="center">
+  
+  <img src="img/pearson2.png" width="450" align="center">
   Fig 2
   
 ### Entrenamiento y visualización de los GMM.
