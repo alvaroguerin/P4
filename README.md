@@ -128,12 +128,12 @@ ejercicios indicados.
   pérdidas, y el score obtenido usando la parametrización que mejor resultado le hubiera dado en la tarea
   de reconocimiento.
  
-  |                        |   LP   |   LPCC  |   MFCC  |
+  |   GMM USUARIO          |   LP   |   LPCC  |   MFCC  |
   |------------------------|:------:|:-------:|:-------:|
-  | score       	   |        |         |         |
-  | umbral óptimo      	   |        |         |         |
-  | núm. falsas alarmas    |        |         |         |
-  | pérdidas     	   |        |         |         |
+  | CD		       	   | 97.2   |  99.2   | 95.6    |
+  | umbral óptimo      	   | -0.43  |  11.63  | -33.69  |
+  | núm. falsas alarmas    | 0      |  0      | 0       |
+  | pérdidas     	   | 0.97   |  0.99   | 0.95    |
 
 ### Test final y trabajo de ampliación.
 
