@@ -75,13 +75,19 @@ ejercicios indicados.
 - Usando el programa <code>pearson</code>, obtenga los coeficientes de correlación normalizada entre los
   parámetros 2 y 3, y rellene la tabla siguiente con los valores obtenidos.
 
-  |                        | LP   | LPCC | MFCC |
-  |------------------------|:----:|:----:|:----:|
-  | &rho;<sub>x</sub>[2,3] |      |      |      |
+  |                        |      LP     |    LPCC    |    MFCC    |
+  |------------------------|:-----------:|:----------:|:----------:|
+  | &rho;<sub>x</sub>[2,3] |  -0.467486  |  0.290027  |  0.317451  |
   
   + Compare los resultados de <code>pearson</code> con los obtenidos gráficamente.
   
-  > 
+  >Como vemos en la fórmula, figura 1, del programa <code>pearson</code> vemos que calcula el coeficiente de correlación entre componentes de un vector de características, <code>rho<code><sub>i</sub> y <code>rho<code><sub>j</sub>. En la segunda foto adjuntada, figura 2, vemos como funcionan los valores del coeficiente de <code>pearson</code>. Interpretando la figura vemos como los valores de <code>rho<code> igual a 0 significan una incorrelación total y los que sean igual a 1 o -1 una correlación total dependiendo en la pendiente. Así pues, podemos concluir que los valores concuerdan a los de las gráficas. El de MFCC es muy cercano al 0 que significa que los puntos están casi incorrelados totalmente. El de LPCC está entre el 0 y el 1, cercanos más a 0 que tienden a mas incorrelación que se puede apreciar. Y finalmente, el LP ya se aprecia que tiene pendiente negativa y con algo de correlación lo que supone un valor entre 0 y -1.
+	 
+	
+  <img src="img/pearson.png" width="450" align="center">
+  Fig 1
+  <img src="img/coef_pearson" width="450" align="center">
+  Fig 2
   
 ### Entrenamiento y visualización de los GMM.
 
