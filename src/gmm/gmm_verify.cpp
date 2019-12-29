@@ -24,10 +24,9 @@ int read_gmms(const Directory &dir, const Ext &ext, const vector<string> &gmm_fi
 
 float verify(const GMM &gmm_candidate, const fmatrix &dat) {
 
-  /// \TODO
+  /// \HECHO
   /// Implement verification score based on gmm of the candidate.
-
-  float score = 0.0F;
+  float score = gmm_candidate.logprob(dat);
   return score;
 }
 
@@ -35,15 +34,12 @@ float verify(const GMM &gmm_candidate, const fmatrix &dat) {
 float verify(const GMM &gmm_candidate, const GMM & gmm_world, const fmatrix &dat,
 	     float &lprobcand, float &lprobbackground) {
 
-  /// \TODO
+  /// \HECHO
   /// Implement verification score based on the gmm of the candidate and the 'world' model.
-  float score = 0.0F;
-  lprobcand = 0.0F;
-  lprobbackground = 0.0F;
-
-
+  lprobcand = gmm_candidate.logprob(dat);
+  lprobbackground = gmm_world.logprob(dat);
+  float score = lprobcand-lprobbackground;
   return score;
-
 }
 
 
@@ -131,8 +127,10 @@ int main(int argc, const char *argv[]) {
       float score, probCandidate, probWorld;
       const GMM &gmm_world = igmm_world->second;
       score = verify(gmm_candidate, gmm_world, dat, probCandidate, probWorld);
-      cout << input_filenames[i] << '\t' << candidates[i] << '\t' << score 
-	   << '\t' << probCandidate <<'\t' << probWorld << endl; 
+      /*cout << input_filenames[i] << '\t' << candidates[i] << '\t' << score 
+	   << '\t' << probCandidate <<'\t' << probWorld << endl;*/
+      if(score >  0.668418563661697) cout << input_filenames[i] << '\t' << candidates[i] << '\t' << '1' << endl;
+      else cout << input_filenames[i] << '\t' << candidates[i] << '\t' << '0' << endl;
     }
   }
   return 0;
@@ -141,7 +139,7 @@ int main(int argc, const char *argv[]) {
 int read_gmms(const Directory &dir, const Ext &ext, const vector<string> &filenames, map<string, GMM> &vgmm) {
   vgmm.clear();
   GMM gmm;
-  
+
   for (unsigned int i=0; i<filenames.size(); ++i) {
     string path = dir + filenames[i] + ext;
     ifstream ifs(path.c_str(), ios::binary);
