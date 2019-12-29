@@ -42,7 +42,11 @@ else
 fi
 
 # Main command for feature extration
+<<<<<<< HEAD
 sox $inputfile -t raw - dither -p12 | $X2X +sf | $FRAME -l 200 -p 40 | $WINDOW -l 200 -L 200 -n 1 -w 1 |
+=======
+sox $inputfile -t raw - dither -p12 | $X2X +sf | $FRAME -l 200 -p 40 | $WINDOW -l 200 -L 200 |
+>>>>>>> 4cd4fe6253ec8e0ba2e797fc942214ce20c26c39
 	$LPC -l 200 -m $lpc_order | $LPCC -m $lpc_order -M $cepstrum_order > $base.lpcc
 
 # Our array files need a header with the number of cols and rows:
